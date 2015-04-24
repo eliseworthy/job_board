@@ -1,1 +1,7 @@
 <h1>Willy Wonka's Wacky Factory Jobs</h1>
+<% @jobs.each do |job| %>
+  <h3><%= job.title %></h3>
+  <p><%= job.description %></p>
+  <p><%= job.pay %></p>
+  <p><%= job.location %></p>
+<% end %>
